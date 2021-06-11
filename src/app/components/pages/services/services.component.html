@@ -1,0 +1,143 @@
+<div class="container">
+    <h2 class="line line-center">Áreas de servicios</h2>
+    <div class="item-cards">
+        <div class="item">
+            <img src="assets/img/serv/main-red-tape-papers.svg" class="icon" alt="">
+            <h4>Trámites</h4>
+            <button class="btn btn-warning" (click)="tramitesDetalles = true">Mas detalles</button>
+        </div>
+        <div class="item">
+            <img src="assets/img/serv/main-house-buy.svg" class="icon" alt="">
+            <h4>Compra de la propiedad</h4>
+            <button class="btn btn-warning" (click)="compraDetalles = true">Mas detalles</button>
+        </div>
+        <div class="item">
+            <img src="assets/img/serv/main-construction.svg" class="icon" alt="">
+            <h4>Reforma y equipamiento</h4>
+            <button class="btn btn-warning" (click)="obraDetalles = true">Mas detalles</button>
+        </div>
+        <div class="item">
+            <img src="assets/img/serv/main-administration.svg" class="icon" alt="">
+            <h4>Administración</h4>
+            <button class="btn btn-warning" (click)="administracionDetalles = true">Mas detalles</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+<ui-modal [display]="tramitesDetalles" title="TRAMITES QUE REALIZAMOS." (close)="tramitesDetalles = false">
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <h4><img src="assets/img/serv/bank.svg" class="icon" alt="banco"> Apertura de cuenta bancaria.</h4>
+            <p>Abrimos una cuenta a tu nombre en el BBVA de Rambla Vella en Tarragona. También te asesoraremos sobre como transferir el dinero. </p>
+        </li>
+        <li class="list-group-item">
+            <h4> <img src="assets/img/serv/nie.svg" class="icon" alt="nie"> Tramitación de NIE</h4>
+            <p>Para iniciar una compra de una propiedad en España necesitará solicitar NIE para obtener su número de identidad extranjero. Se
+                realizará el
+                trámite en extranjería, y se le otorgara un NIE de no residente que durará 3 meses y será con el solo fín de comprar un inmueble. </p>
+        </li>
+        <li class="list-group-item">
+            <h4>
+                <img src="assets/img/serv/water-light.svg" class="icon" alt="">
+                <!-- <img src="assets/img/serv/water.svg" class="icon" alt="">/ <img src="assets/img/serv/light.svg" class="icon" alt=""> -->
+                Acompañamiento de cambios y domiciliaciones de luz, agua, comunidad
+                propietarios
+            </h4>
+            <p>Tras comprar una casa en España deberá iniciar otro tipo de trámites como el cambio de domiciliación de suministros y otros menesteres.
+                En
+                Aredal ofrecemos el servicio de consulting donde nos encargamos de todos estos trámites.</p>
+        </li>
+    </ul>
+</ui-modal>
+
+<ui-modal [display]="compraDetalles" title="COMPRA DE LA PROPIEDAD" (close)="compraDetalles = false">
+    <ul class="list-group list-group-flush">
+        <div class="item">
+            <h4><img src="assets/img/serv/search.svg" class="icon" alt=""> Estudio de la oferta inmobiliaria</h4>
+            <p>La búsqueda de la propiedad se hará en forma conjunta, nosotros te propondremos algunas y vos podés buscar también, a través de webs
+                como:
+                idealista y
+                fotocasa. Con nuestro asesoramiento sobre las mejores zonas para invertir.</p>
+        </div>
+        <div class="item">
+            <h4><img src="assets/img/serv/eye.svg" class="icon" alt=""> Visita a propiedades</h4>
+            <p>Visitaremos las propiedades que acordemos (hasta 6 propiedades) y te enviaremos un informe con fotos y plano de la misma, para ayudarte
+                a decidir cuál es la correcta.</p>
+        </div>
+        <div class="item">
+            <h4><img src="assets/img/serv/contract.svg" class="icon" alt=""> Contrato de arras en España</h4>
+            <p>Cuando se dispone a comprar o vender una propiedad necesitará de un contrato de arras para fijar el precio de venta de la propiedad
+                inmobiliaria.
+                Mediante este contrato el comprador entrega una seña previamente pactada y se establece una fecha límite para formalizar la compra. En
+                Aredal
+                elaboraremos el contrato de arras para su tranquilidad.</p>
+        </div>
+        <div class="item">
+            <h4><img src="assets/img/serv/legal.svg" class="icon" alt=""> Comprobar situación legal, registral y las posibles cargas de la propiedad.</h4>
+            <p>Cuando se decida por la propiedad inmobiliaria que desea comprar, comprobaremos la situación legal y refistral de la vivienda. No es
+                otra
+                cosa, que:
+                comprobar quién o quiénes son los propietarios y si se corresponde con la persona que la está vendiendo; si existen gravámenes sobre
+                la
+                misma, es
+                decir, si está sujeta a hipoteca; si existen inquilinos; si está en una comunidad de vecinos, comprobar que también esté al día de los
+                pago de la
+                comunidad; y, por último, comprobar si se han pagado los impuestos pertinentes y está al día, como el Impuesto de Bienes Inmuebles o
+                el
+                recibo de
+                recogida de residuos.</p>
+        </div>
+        <div class="item">
+            <h4><img src="assets/img/serv/stamp.svg" class="icon" alt=""> Trámites con la Notaría en España</h4>
+            <p>Nos encargamos de realizar los trámites pertinentes con la Notaría para que usted no tenga que ir personalmente a la notaría. Lo
+                representarémos
+                legalmente y firmaremos por usted si lo desea.</p>
+        </div>
+        <div class="item">
+            <h4><img src="assets/img/serv/receipt.svg" class="icon" alt=""> Impuestos e inscripción en el Registro de la propiedad</h4>
+            <p>Una vez llevada a cabo la compra, nos encargamos del pago del ITP (El impuestos de valor añadido o el impuesto de transmisión de
+                patrimonio), gastos
+                de notaría, y las tasas del Registro de la Propiedad. </p>
+        </div>
+
+
+    </ul>
+</ui-modal>
+
+<ui-modal [display]="obraDetalles" title="SI LA PROPIEDAD LO REQUIERE, NOS ENCARGAREMOS DE LA REFORMA Y EQUIPAMIENTO." (close)="obraDetalles = false">
+    <ul class="list-group list-group-flush">
+        <div class="item">
+            <h4><img src="assets/img/serv/construction.svg" class="icon" alt=""> Reforma</h4>
+            <p>Si la propiedad lo requiere, realizaremos un proyecto y presupuesto de reforma, adecuado a sus necesidades. Y realizaremos todas las
+                obras
+                necesarias para realizar dicha reforma, y posterior limpieza de obra.</p>
+        </div>
+        <div class="item">
+            <h4><img src="assets/img/serv/furniture.svg" class="icon" alt=""> Amoblamiento y decoración</h4>
+            <p>Para poder alquilar la propiedad a turistas, se deberá amueblar, decorar y equipar la misma. Nos encargaremos de todo este proceso,
+                poniéndonos de
+                acuerdo, con el cliente, tanto en el presupuesto como en el estilo deseado.</p>
+        </div>
+    </ul>
+</ui-modal>
+
+<ui-modal [display]="administracionDetalles" title="ADMINISTRACIÒN" (close)="administracionDetalles = false">
+    <ul class="list-group list-group-flush">
+        <div class="item">
+            <h4><img src="assets/img/serv/calendar.svg" class="icon" alt="">/ <img src="assets/img/serv/turist.svg" class="icon" alt="">Alquiler anual o turístico.</h4>
+            <p>De acuerdo al tipo y ubicación de la propiedad, nos encargaremos de alquilarla, ya sea de forma mensual o turística. Ocupándonos de la
+                entrega de llaves, limpieza, cambio de ropa de cama, etc. Gestionando el alquiler desde plataformas como Airbnb, booking para
+                alquileres
+                turísticos y fotocasa o idealista para alquileres mensuales. Incluyendo en las publicaciones fotos, mapa y planos de la propiedad.
+            </p>
+        </div>
+        <div class="item">
+            <h4><img src="assets/img/serv/sell-handshake.svg" class="icon" alt=""> Venta de la propiedad.</h4>
+            <p>Si en algún momento decides vender la propiedad, nos encargamos de publicarla, mostrarla a posibles compradores y concretar la venta.
+                FOTO DE UN PISO</p>
+        </div>
+    </ul>
+</ui-modal>

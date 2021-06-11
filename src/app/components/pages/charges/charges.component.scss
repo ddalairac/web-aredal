@@ -1,0 +1,16 @@
+:host {
+    background-color: black;
+    display: flex;
+    color: white;
+    padding: 60px 0;
+    margin: 60px 0px;
+}
+.list-group{
+    margin-bottom: 20px;
+}
+.list-group-item{
+    background-color: transparent;
+    color: #ccc;
+
+    border: 1px solid rgba(255,255,255, 0.125);
+}
