@@ -1,12 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+html,body{
 
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
 h1 {
     font-size: 3rem;
-    font-weight: bold;
+    // font-weight: bold;
 }
 h2 {
-    font-weight: bold;
     font-size: 1.75rem;
+    // font-weight: bold;
     // padding-bottom: 15px;
     // margin-bottom: 15px;
 }
@@ -22,7 +28,7 @@ h2 {
             bottom: 0;
             height: 1px;
             width: 30px;
-            border-bottom: 2px solid #ffcc67;
+            border-bottom: 2px solid #ffc107;
             left: 0;
         }
     }

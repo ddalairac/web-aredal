@@ -10,6 +10,7 @@ import { ChargesComponent } from './components/pages/charges/charges.component';
 import { MenuComponent } from './components/ui/menu/menu.component';
 import { AboutComponent } from './components/pages/about/about.component';
 import { ModalComponent } from './components/ui/modal/modal.component';
+import { ProfitabilityComponent } from './components/pages/profitability/profitability.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ModalComponent } from './components/ui/modal/modal.component';
     ChargesComponent,
     MenuComponent,
     AboutComponent,
-    ModalComponent
+    ModalComponent,
+    ProfitabilityComponent
   ],
   imports: [
     BrowserModule,

@@ -3,6 +3,8 @@
 }
 .container{
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     padding: 0;
     border-radius: 5px;
     position: relative;
@@ -26,4 +28,13 @@ img{
 h6{
     font-weight: bold;
     margin: 40px 0 0 0;
+}
+@media screen and (max-width:991px) {
+    .container{
+        flex-direction: column;
+        width: 90vw;
+    }
+    .left, .right{
+        width: 100%;
+    }
 }
