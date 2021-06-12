@@ -1,0 +1,24 @@
+:host {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 60px 0;
+    // margin: 60px 0px;
+}
+.list-group-item {
+    display: flex;
+    background-color: transparent;
+    color: #ccc;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    .img-cont {
+        width: 30px;
+        display: table;
+        /* background: red; */
+        text-align: center;
+        margin-right: 8px;
+        .icon {
+            filter: invert(100%);
+        }
+    }
+}

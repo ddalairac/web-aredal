@@ -4,7 +4,7 @@ html,body{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 h1 {
     font-size: 3rem;
@@ -38,7 +38,12 @@ h2 {
         }
     }
 }
-
+.icon {
+    height: 24px;
+    display: inline-block;
+    margin-right: 5px;
+    padding-bottom: 5px;
+}
 @media screen and (min-width: 768px) {
     h1 {
         font-size: 6rem;

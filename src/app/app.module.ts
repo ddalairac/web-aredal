@@ -11,6 +11,7 @@ import { MenuComponent } from './components/ui/menu/menu.component';
 import { AboutComponent } from './components/pages/about/about.component';
 import { ModalComponent } from './components/ui/modal/modal.component';
 import { ProfitabilityComponent } from './components/pages/profitability/profitability.component';
+import { WhyTarragonaComponent } from './components/pages/why-tarragona/why-tarragona.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ProfitabilityComponent } from './components/pages/profitability/profita
     MenuComponent,
     AboutComponent,
     ModalComponent,
-    ProfitabilityComponent
+    ProfitabilityComponent,
+    WhyTarragonaComponent
   ],
   imports: [
     BrowserModule,
