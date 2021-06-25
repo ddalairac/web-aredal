@@ -1,0 +1,10 @@
+<div class="container">
+    <swiper-gallery>
+        <swiper-item *ngFor="let item of itemsArray">
+            <!-- ; let index=index; -->
+            <!-- item {{item.alt}} -->
+            <!-- [style.background]="item.color" -->
+            <img src="assets/img/tarragona-gallery/{{item.img}} " alt="{{item.alt}}">
+        </swiper-item>
+    </swiper-gallery>
+</div>

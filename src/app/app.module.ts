@@ -12,6 +12,10 @@ import { AboutComponent } from './components/pages/about/about.component';
 import { ModalComponent } from './components/ui/modal/modal.component';
 import { ProfitabilityComponent } from './components/pages/profitability/profitability.component';
 import { WhyTarragonaComponent } from './components/pages/why-tarragona/why-tarragona.component';
+import { SwiperGalleryComponent } from './components/ui/swiper-gallery/swiper-gallery.component';
+import { SwiperItemComponent } from './components/ui/swiper-gallery/swiper-item/swiper-item.component';
+import { SwiperItemDirectiveDirective } from './components/ui/swiper-gallery/swiper-item/swiper-item-directive.directive';
+import { GalleryComponent } from './components/pages/gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +28,11 @@ import { WhyTarragonaComponent } from './components/pages/why-tarragona/why-tarr
     AboutComponent,
     ModalComponent,
     ProfitabilityComponent,
-    WhyTarragonaComponent
+    WhyTarragonaComponent,
+    SwiperGalleryComponent,
+    SwiperItemComponent,
+    SwiperItemDirectiveDirective,
+    GalleryComponent,
   ],
   imports: [
     BrowserModule,

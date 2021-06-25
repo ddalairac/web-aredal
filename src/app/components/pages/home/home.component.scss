@@ -1,17 +1,31 @@
 :host {
+    display: block;
+    position: relative;
     // background-color: red;
-    background-image: url("~src/assets/img/tarragona-vistas-desde-la-catedral.jpeg");
+    // background-image: url("~src/assets/img/tarragona-vistas-desde-la-catedral.jpeg");
+    background-image: url("~src/assets/img/tarragona-inicio.jpeg");
     background-position: center;
     background-size: cover;
     display: flex;
     width: 100vw;
     // height: calc(100vh - 56px);
     height: 75vh;
+    // :after{
+    //     content: " ";
+    //     display: block;
+    //     width: 100%;
+    //     height: 100%;
+    //     background: rgba($color: #000000, $alpha: .3);
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    // }
 }
 .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     height: inherit;
     text-align: center;
     color: white;
@@ -20,6 +34,19 @@
 
 h2{
     margin: 0;
+}
+h1,h2,p{
+    background: rgba(0,0,0,0.5);
+    // background: rgba(255,255,255,0.5);
+    // background: black;
+    // background: white;
+    // background: #ffc107;
+    // color: #ffc107;
+    // color: black;
+    color: white;
+    display: inline-block;
+    width: fit-content;
+    padding: 0 8px;
 }
 // h2 {
 //     font-weight: bold;

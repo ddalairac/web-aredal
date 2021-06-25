@@ -1,0 +1,26 @@
+<div class="swiper">
+    <div class="wrapper" [style.transform]="'translateX(' + position + '%)'" (swipeleft)="goNext()" (swiperight)="goPrev()">
+        <!-- (panstart)="onPanStart($event)" (panmove)="onPan($event)" (panend)="onPanEnd($event)" #wrapper -->
+        <ng-content></ng-content>
+    </div>
+</div>
+
+<button class="button-prev {{ preDisabled }}" (click)="goPrev()">
+    <img src="assets/img/ui/chevron-left.svg" alt="">
+</button>
+<button class="button-next {{ nextDisabled }}" (click)="goNext()">
+    <img src="assets/img/ui/chevron-right.svg" alt="">
+</button>
+<div class="pagination" *ngIf="pagination">
+    <span class="bullet" *ngFor="let item of items; let index = index" (click)="goTo(index)" [class.active]="index == activeItem"></span>
+</div>
+
+<!-- {{ items | json }} -->
+
+<!-- 	<p>wrapperWidth: {{wrapperWidth}}</p>
+	<p>itemWidth: {{itemWidth}}</p>
+	<p>startX: {{startX}}</p>
+	<p>deltaX: {{deltaX}}</p>
+	<p>totalItems: {{totalItems}}</p>
+	<p>position: {{position}}</p>
+	<p>activeItem: {{activeItem}}</p> -->

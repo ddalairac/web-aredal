@@ -11,5 +11,4 @@ export class WhyTarragonaComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }

@@ -1,0 +1,102 @@
+//:host(.item)
+:host ::ng-deep swiper-item {
+  width: 100%;
+  height: auto;
+  position: relative; //margin-right: 30px;
+  -webkit-flex-shrink: 0;
+  -ms-flex: 0 0 auto;
+  flex-shrink: 0;
+}
+
+:host {
+  display: block;
+  width: auto;
+  margin: 0 30px;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.swiper {
+  display: block;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  .wrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    -ms-transition-property: -ms-transform;
+    transition-property: transform;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    transform: translate3d(0px, 0px, 0px);
+    transition-duration: 500ms;
+  }
+}
+
+.button-prev,
+.button-next {
+  position: absolute;
+  top: 0;
+  width: 40px;
+  height: 100%;
+  margin-top: -22px;
+  z-index: 10;
+  background: none;
+  border: none; //background: grey;
+  cursor: pointer;
+  &.disabled {
+    opacity: 0.2;
+  }
+  &:focus {
+    outline: none;
+  }
+  img{
+    filter: invert(100%);
+  }
+}
+
+.button-prev {
+  left: -45px;
+}
+
+.button-next {
+  right: -45px;
+}
+
+.pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+  display: block;
+  .bullet {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-radius: 100%;
+    background: #fff;
+    opacity: 0.2;
+    margin: 0 5px;
+    cursor: pointer;
+    &.active {
+      opacity: 1;
+      background: #ffc107;
+    }
+  }
+}

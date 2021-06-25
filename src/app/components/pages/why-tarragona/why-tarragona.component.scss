@@ -18,7 +18,12 @@
         text-align: center;
         margin-right: 8px;
         .icon {
+            height: 24px;
+            width: 24px;
             filter: invert(100%);
         }
     }
+}
+.list-group{
+    margin-bottom: 30px;
 }
