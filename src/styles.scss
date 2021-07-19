@@ -1,9 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 html,body{
-
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    // font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    // font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    // font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 h1 {
@@ -18,34 +17,44 @@ h2 {
 }
 h1,
 h2 {
-    &.line {
-        position: relative;
-        padding-bottom: 10px;
-        margin-bottom: 10px;
-        &:before {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            height: 1px;
-            width: 30px;
-            border-bottom: 2px solid #ffc107;
-            left: 0;
-        }
-    }
-    &.line-center {
-        &:before {
-            left: calc(50% - 15px);
-        }
-    }
+    // &.line {
+    //     position: relative;
+    //     padding-bottom: 10px;
+    //     margin-bottom: 10px;
+    //     &:before {
+    //         content: "";
+    //         position: absolute;
+    //         bottom: 0;
+    //         height: 1px;
+    //         width: 30px;
+    //         // border-bottom: 2px solid #ffc107;
+    //         border-bottom: 2px solid #255183;
+    //         left: 0;
+    //     }
+    // }
+    // &.line-center {
+    //     &:before {
+    //         left: calc(50% - 15px);
+    //     }
+    // }
 }
 img{
     width: 100%;
 }
 .icon {
     height: 24px;
+    width: 24px;
     display: inline-block;
     margin-right: 5px;
     padding-bottom: 5px;
+}
+.btn-primary{
+
+    background-color: #255183;
+    border-color: #255183;
+}
+a{
+    color: #255183;
 }
 @media screen and (min-width: 768px) {
     h1 {
